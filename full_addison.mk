@@ -21,4 +21,5 @@ $(call inherit-product, device/motorola/addison/device.mk)
 PRODUCT_DEVICE := addison
 PRODUCT_NAME := full_addison
 
+$(call inherit-product-if-exists, vendor/motorola/addison/msm8937-common-vendor.mk)
 $(call inherit-product-if-exists, vendor/motorola/addison/addison-vendor.mk)
