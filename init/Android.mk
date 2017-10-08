@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := system/core/init
 LOCAL_CPPFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
-LOCAL_SRC_FILES := init_addison.cpp
-LOCAL_MODULE := libinit_addison
+LOCAL_SRC_FILES := init_moto.cpp
+LOCAL_MODULE := libinit_moto
 
 include $(BUILD_STATIC_LIBRARY)
