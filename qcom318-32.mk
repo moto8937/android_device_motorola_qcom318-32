@@ -62,7 +62,7 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
-    audio.primary.msm8953 \
+    audio.primary.$(TARGET_BOARD_PLATFORM) \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8953 \
+    camera.$(TARGET_BOARD_PLATFORM) \
     libbson \
     Snap
 
@@ -103,10 +103,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    gralloc.msm8953 \
-    copybit.msm8953 \
-    hwcomposer.msm8953 \
-    memtrack.msm8953 \
+    gralloc.$(TARGET_BOARD_PLATFORM) \
+    copybit.$(TARGET_BOARD_PLATFORM) \
+    hwcomposer.$(TARGET_BOARD_PLATFORM) \
+    memtrack.$(TARGET_BOARD_PLATFORM) \
     libtinyxml
 
 # Display Calibration
@@ -137,7 +137,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     libgnsspps \
-    gps.msm8953
+    gps.$(TARGET_BOARD_PLATFORM)
 
 # IPA Manager
 PRODUCT_PACKAGES += \
@@ -154,7 +154,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8953
+    lights.$(TARGET_BOARD_PLATFORM)
 
 # Media
 PRODUCT_PACKAGES += \
@@ -201,7 +201,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.msm8953
+    power.$(TARGET_BOARD_PLATFORM)
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -271,6 +271,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-$(call inherit-product-if-exists, vendor/motorola/msm8937-common/msm8937-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/qcom318-32/qcom318-32-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)

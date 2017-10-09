@@ -1,5 +1,5 @@
-Common Device Tree for Motorola MSM8937 Family
-==============================================
+Common Device Tree for Motorola Qualcomm 32-bit Linux 3.18 Family
+=================================================================
 
 This tree is included from device specific trees.
 

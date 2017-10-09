@@ -48,7 +48,6 @@ vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8953.so:lib/hw/camera.vendor.msm8953.so
 lib/hw/camera.rc.so
 lib/libadvalgcore.so
 lib/libarcsoft_beautyshot.so
@@ -251,10 +250,8 @@ vendor/lib/libssd.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Fingerprint
-lib/hw/fingerprint.msm8953.so
 lib/libcom_fingerprints_service.so
 lib/lib_fpc_tac_shared.so
-vendor/lib/hw/gatekeeper.msm8953.so
 
 # GPS
 bin/loc_launcher
@@ -307,14 +304,6 @@ vendor/lib/libxtadapter.so
 vendor/lib/libxtwifi_ulp_adaptor.so
 
 # Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/hw/vulkan.msm8953.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so
@@ -400,7 +389,6 @@ vendor/firmware/libpn548ad_fw.so
 
 # Qualcomm framework
 bin/irsc_util
-vendor/lib/hw/keystore.msm8953.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -520,10 +508,8 @@ vendor/lib/libscveTextReco_stub.so
 # Sensors
 bin/motosh
 etc/firmware/sensorhubfw.bin
-lib/hw/sensorhub.msm8953.so
 lib/hw/sensors.addison.so
 lib/hw/sensors.iio.so
-lib/hw/sensors.msm8953.so
 lib/libiio.so
 lib/libsensorhub.so
 vendor/lib/libsensor1.so
