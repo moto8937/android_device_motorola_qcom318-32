@@ -92,11 +92,6 @@ PRODUCT_PACKAGES += \
     libbson \
     Snap
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/msm8953_mot_camera.xml:system/etc/camera/msm8953_mot_camera.xml \
-    $(LOCAL_PATH)/configs/camera/ov5693_chromatix.xml:system/etc/camera/ov5693_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov16860_chromatix.xml:system/etc/camera/ov16860_chromatix.xml
-
 # CMActions
 PRODUCT_PACKAGES += \
     CMActions
@@ -231,10 +226,6 @@ PRODUCT_AAPT_CONFIG := normal
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf
-
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-addison.conf:system/etc/thermal-engine-addison.conf
 
 # Wifi
 PRODUCT_PACKAGES += \
