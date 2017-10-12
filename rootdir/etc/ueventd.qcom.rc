@@ -357,3 +357,12 @@
 
 #DTV
 /dev/isdbt                 0660 mot_dtv  mot_dtv
+
+#Egistec fingerprint
+/dev/esfp0               0660   system     system
+
+# Trustonic TEE device
+/dev/mobicore             0600   system     system
+
+# haptic
+/dev/drv2605              0660   system     system
