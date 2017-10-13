@@ -26,6 +26,8 @@
 #
 
 import init.mmi.rc
+import init.platform.rc
+import init.target.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
